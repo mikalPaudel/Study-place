@@ -235,7 +235,7 @@ Biasing ensures stable operation. Common biasing techniques include:
 
 ---
 
-CHAPTER-4 [Power Amplifiers]
+# CHAPTER-4 [Power Amplifiers]
 ### **4. Output Stages and Power Amplifiers**  
 
 A **power amplifier** is designed to deliver a large amount of power to a load (like a speaker or motor). Unlike small-signal amplifiers (used for voltage gain), power amplifiers focus on **efficiency, heat dissipation, and driving large currents**.  
