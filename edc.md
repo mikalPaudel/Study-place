@@ -456,3 +456,96 @@ To enhance performance, we use:
    
     $\[V_{\text{out}} = 1.25 \left(1 + \frac{R_2}{R_1}\right)\]$  
 ---
+
+# **Electronic Devices and Circuits (EDC) Formula Sheet**
+
+---
+
+## **1. Diodes**
+
+### **Diode Current Equation**
+$\[ I_D = I_S \left(e^{\frac{V_D}{nV_T}} -1 \right) \]$
+where:
+- $\( I_S \)$ = Saturation current
+- $\( V_D \)$ = Diode voltage
+- $\( n \)$ = Ideality factor (typically 1-2)
+- $\( V_T \)$ = Thermal voltage $( \( V_T \approx 25mV \)$ at room temp)
+
+### **Zener Diode Regulation**
+$\[ V_{out} = V_Z \]$
+where $\( V_Z \)$ is the Zener breakdown voltage.
+
+---
+
+## **2. Bipolar Junction Transistors (BJTs)**
+
+### **DC Current Relationships**
+$\[ I_E = I_B + I_C \]$
+$\[ \beta = \frac{I_C}{I_B} \]$
+$\[ \alpha = \frac{I_C}{I_E} \]$
+$\[ \beta = \frac{\alpha}{1 - \alpha} \]$
+
+### **BJT Amplifier Gain**
+- **Voltage Gain (CE amplifier):**
+  $\[ A_v = -\frac{g_m R_C}{1 + g_m R_E} \]$
+  where $\( g_m = \frac{I_C}{V_T} \)$
+
+- **Current Gain:**
+  $\[ A_i = \beta \]$
+
+- **Power Gain:**
+  $\[ A_p = A_v \times A_i \]$
+
+---
+
+## **3. Field-Effect Transistors (FETs)**
+
+### **MOSFET Equations**
+- **Drain Current in Saturation:**
+  $\[ I_D = \frac{k}{2} (V_{GS} - V_{th})^2 \]$
+- **Transconductance:**
+  $\[ g_m = \frac{\partial I_D}{\partial V_{GS}} = k (V_{GS} - V_{th}) \]$
+
+### **JFET Drain Current**
+$\[ I_D = I_{DSS} \left( 1 - \frac{V_{GS}}{V_P} \right)^2 \]$
+where $\( V_P \)$ is pinch-off voltage.
+
+---
+
+## **4. Power Amplifiers**
+
+### **Efficiency**
+- **Class A:** $\( \eta \approx 25-30\% \)$
+- **Class B:** $\( \eta_{max} = 78.5\% \)$
+- **Class AB:** $\( 50\%-70\% \)$
+- **Class C:** $\( \eta > 80\% \)$
+
+---
+
+## **5. Oscillators & Waveform Generators**
+
+### **Barkhausen Criterion**
+$\[ |A \beta| \geq 1, \quad \text{Phase Shift} = 0^\circ \text{ or } 360^\circ \]$
+
+### **Oscillator Frequency**
+- **RC Phase Shift Oscillator:**
+  $\[ f = \frac{1}{2\pi RC \sqrt{6}} \]$
+- **LC Oscillator:**
+  $\[ f = \frac{1}{2\pi \sqrt{LC}} \]$
+
+---
+
+## **6. Voltage Regulators & Power Supplies**
+
+### **Linear Regulator Output Voltage**
+$\[ V_{out} = V_Z + V_{BE} \]$
+
+### **LM317 Adjustable Regulator**
+$\[ V_{out} = 1.25 \left(1 + \frac{R_2}{R_1} \right) \]$
+
+### **Ripple Factor**
+$\[ r = \frac{I_{rms}}{I_{dc}} \]$
+
+---
+
+
